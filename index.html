@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <title>Gabriella Portfolio Website</title>
+
+</head>
+<body>
+ <header>
+   <div class="logo">
+     <img src="./assets/logo.png" alt="">
+   </div>
+   <button class="nav-toggle" aria-label="toggle navigation">
+     <span class="hamburger"></span>
+   </button>
+   <nav class="nav">
+     <ul class="nav__list">
+       <li class="nav__item"><a class='nav__link'href="#home">Home</a></li>
+       <li class="nav__item"><a class='nav__link'href="#aboutme">About me</a></li>
+       <li class="nav__item"><a class='nav__link'href="#work">My Work</a></li>
+       <li class="nav__item"><a class='nav__link'href="#contact">Contact Info</a></li>
+
+     </ul>
+   </nav>
+ </header>
+ <section class="intro" id='home'>
+   <h1 class="section__title section__title--intro">
+     Hi, I am <strong>Gabriella Tavares</strong></h1>
+     <p class="section__subtitle section__subtitle--intro">a full-stack developer.</p>
+     <img src="assets/self.jpg" alt='self pixel' class='intro__img'>
+   
+ </section>
+ <section class="about-me" id='aboutme'>
+   <h2>About me</h2>
+   <div>
+     <p>
+       I'm an aspiring full-stack web developer! Javascript sparked my curiosity after I started to edit HTML/CSS on my blog projects when I was in college. After finishing my bachelor's degree in Journalism, I've decided to change my career path and challenge myself to the next level.  
+     </p>
+     <p>
+       I started learning a little bit of the web-dev world on UDEMY, and I recently graduated from Full Stack bootcamp at Barcelona Code School.
+     </p>
+     <p>
+       I'm always interest in learning new things. Right now I'm looking for opportunities to work as a web developer. 
+     </p>
+     <h3>Skills</h3>
+     <p class="skills">HTML, CSS, JAVASCRIPT, REACT, REACT NATIVE, MONGODB, EXPRESS, NODEJS, GIT.</p>
+
+     <a href="./assets/CV - Gabriella Tavares.pdf" class="button1" download>Download my CV <i class="fa fa-download"></i></a>
+
+   </div>
+
+ </section>
+ <section class="work" id='work'>
+   <h2 class="section">Work</h2>
+   <div class="grid1">
+    <div>
+       <h3>
+         treat yo self store
+       </h3>
+       <p>
+        This is a MERN <strong>(MongoDB, Express, React.js, Node) </strong>stack e-commerce website that's built during the course. You can sign-up and login and admin, complete CRUD (create, read, update and delete) operations on the products, add products to shopping-cart (increase and decrease quantity, delete on product from the cart and clear all products once). Conduct a fully automated payment using Stripe. You will receive a e-mail confirmation about your order. Also, you can contact us via a form (with nodemailer)! After the order is completed, the stock is updated.
+       </p>
+       <div>
+       <a href="https://github.com/gabriellatavares/treatyoself" class="button1">code <i class="fa fa-code"></i></a>
+       <a href="http://157.230.23.136/" class="button1">demo <i class="fas fa-globe-americas"></i></a></div>
+
+    </div>
+    <div>
+      <img class='portfolio__img' src="./assets/Ecommerce.png" alt="e-commerce app">
+    </div>
+  </div>
+   <div class="grid1">
+     <div>
+       <img class='portfolio__img' src="./assets/react native.png" alt="weather app">
+     </div>
+     <div>
+        <h3>
+          weather app
+        </h3>
+        <p>
+        This is a Forecast Weather App that's built during the course as well using <strong>React Native</strong>. It displays the local temperature on page load, based on the location of the device and it has an input that can be used to search for the weather for a different city. This app was built with OpenWeatherMap API and Google Autocomplete API.
+        </p>
+        <a href="https://github.com/gabriellatavares/React-Native-WeatherApp" class="button1">code <i class="fa fa-code"></i></a>
+     </div>
+   </div>
+   <div class="grid1">
+      <div>
+        <h3>
+          todo app
+        </h3>
+        <p>
+          This is a full Todo list app made from scratch using <strong>React Native</strong> and <strong>Async Storage</strong>, which enables us to store data persistently in our application. It's a simple app to help plan your day!
+        </p>
+        <div>
+          <a href="https://github.com/gabriellatavares/React-Native-TodoApp" class="button1">code <i class="fa fa-code"></i></a>
+        </div>
+    </div>
+    <div>
+      <img class='portfolio__img' src="./assets/todo react native.png" alt="todo app">
+    </div>
+    </div>
+  </div>
+  <div class="grid1">
+    <div>
+      <img  class='portfolio__img' src="./assets/bcs copy.png" alt="bcs copy">
+    </div>
+    <div>
+       <h3>
+         responsive website clone
+       </h3>
+       <p>
+        This is a <strong>pure layout</strong> cloning project I did during the bootcamp of the school's website. It has no functionality, just purely presentational copy of all the page elements.</p>
+        <a href="https://github.com/gabriellatavares/BCS-Cloning-Project" class="button1">code <i class="fa fa-code"></i></a>
+        <a href="http://bcs-clone.surge.sh/" class="button1">demo <i class="fas fa-globe-americas"></i></a>
+    </div>
+  </div>
+ </section>
+
+  <footer id="contact">
+    <a href="mailto:gabriellatatavares@gmail.com" class="footer__link">gabriellatatavares@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item"><a href="https://www.linkedin.com/in/gabriella-tavares/" class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+      <li class="social-list__item"><a href="https://github.com/gabriellatavares" class="social-list__link"><i class="fab fa-github"></i></a></li>
+      <li class="social-list__item"><a href="https://gitlab.com/gabriellatavares" class="social-list__link"><i class="fab fa-gitlab"></i></a></li>
+
+    </ul>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
